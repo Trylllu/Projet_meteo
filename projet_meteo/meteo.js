@@ -22,15 +22,15 @@ let getWeatherFromJSON = () => {
         <h1>${weatherData.name}</h1>
         <h4 class="desc">${weatherData.weather[0].description}</h4>
         <img src="https://openweathermap.org/img/w/${weatherData.weather[0].icon}.png">
-        <h1>${(weatherData.main.temp - 273.15).toFixed(2)} &#176;C</h1>
+        <h1>${(weatherData.main.temp - 273.15).toFixed(0)} &#176;C</h1>
         <div class="temp-container">
             <div>
                 <h4 class="title">min</h4>
-                <h4 class="temp">${(weatherData.main.temp_min - 273.15).toFixed(2)} &#176;C</h4>
+                <h4 class="temp">${(weatherData.main.temp_min - 273.15).toFixed(0)} &#176;C</h4>
             </div>
             <div>
                 <h4 class="title">max</h4>
-                <h4 class="temp">${(weatherData.main.temp_max - 273.15).toFixed(2)} &#176;C</h4>
+                <h4 class="temp">${(weatherData.main.temp_max - 273.15).toFixed(0)} &#176;C</h4>
             </div>
         </div>
       `;
@@ -65,15 +65,15 @@ let getWeatherFromJSON = () => {
           <h1>${data.city.name}</h1>
           <h3>Demain<h3>
           <img src="https://openweathermap.org/img/w/${weatherData.weather[0].icon}.png">
-          <h2>${(weatherData.main.temp - 273.15).toFixed(2)} &#176;C</h2>
+          <h2>${(weatherData.main.temp - 273.15).toFixed(0)} &#176;C</h2>
           <div class="temp-container">
               <div>
                   <h4 class="title">min</h4>
-                  <h4 class="temp">${(weatherData.main.temp_min - 273.15).toFixed(2)} &#176;C</h4>
+                  <h4 class="temp">${(weatherData.main.temp_min - 273.15).toFixed(0)} &#176;C</h4>
               </div>
               <div>
                   <h4 class="title">max</h4>
-                  <h4 class="temp">${(weatherData.main.temp_max - 273.15).toFixed(2)} &#176;C</h4>
+                  <h4 class="temp">${(weatherData.main.temp_max - 273.15).toFixed(0)} &#176;C</h4>
               </div>
           </div>
         `;
@@ -111,15 +111,15 @@ let getWeatherFromJSON = () => {
           <h1>${data.city.name}</h1>
           <h3>Après demain<h3>
           <img src="https://openweathermap.org/img/w/${weatherData.weather[0].icon}.png">
-          <h2>${(weatherData.main.temp - 273.15).toFixed(2)} &#176;C</h2>
+          <h2>${(weatherData.main.temp - 273.15).toFixed(0)} &#176;C</h2>
           <div class="temp-container">
               <div>
                   <h4 class="title">min</h4>
-                  <h4 class="temp">${(weatherData.main.temp_min - 273.15).toFixed(2)} &#176;C</h4>
+                  <h4 class="temp">${(weatherData.main.temp_min - 273.15).toFixed(0)} &#176;C</h4>
               </div>
               <div>
                   <h4 class="title">max</h4>
-                  <h4 class="temp">${(weatherData.main.temp_max - 273.15).toFixed(2)} &#176;C</h4>
+                  <h4 class="temp">${(weatherData.main.temp_max - 273.15).toFixed(0)} &#176;C</h4>
               </div>
           </div>
         `;
@@ -158,15 +158,15 @@ let getWeatherFromJSON = () => {
             <h1>${data.city.name}</h1>
             <h3>Après après demain<h3>
             <img src="https://openweathermap.org/img/w/${weatherData.weather[0].icon}.png">
-            <h2>${(weatherData.main.temp - 273.15).toFixed(2)} &#176;C</h2>
+            <h2>${(weatherData.main.temp - 273.15).toFixed(0)} &#176;C</h2>
             <div class="temp-container">
                 <div>
                     <h4 class="title">min</h4>
-                    <h4 class="temp">${(weatherData.main.temp_min - 273.15).toFixed(2)} &#176;C</h4>
+                    <h4 class="temp">${(weatherData.main.temp_min - 273.15).toFixed(0)} &#176;C</h4>
                 </div>
                 <div>
                     <h4 class="title">max</h4>
-                    <h4 class="temp">${(weatherData.main.temp_max - 273.15).toFixed(2)} &#176;C</h4>
+                    <h4 class="temp">${(weatherData.main.temp_max - 273.15).toFixed(0)} &#176;C</h4>
                 </div>
             </div>
           `;
